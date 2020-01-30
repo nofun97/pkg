@@ -1,0 +1,12 @@
+name: Generate GoDoc
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: GoDoc Action
+        uses: ktr0731/godoc-action@v0.1.0
