@@ -10,4 +10,9 @@ require (
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/sirupsen/logrus v1.4.2
 	github.com/stretchr/testify v1.4.0
+	golang.org/x/net v0.0.0-20200202094626-16171245cfb2 // indirect
+	golang.org/x/sys v0.0.0-20200212091648-12a6c2dcc1e4 // indirect
+	golang.org/x/text v0.3.2 // indirect
+	google.golang.org/genproto v0.0.0-20200212174721-66ed5ce911ce // indirect
+	google.golang.org/grpc v1.27.1 // indirect
 )

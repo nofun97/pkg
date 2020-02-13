@@ -94,6 +94,11 @@ func (f Fields) From(ctx context.Context) Logger {
 	return From(f.Onto(ctx))
 }
 
+// HasLogger checks if the current fields has a logger.
+func (f Fields) HasLogger() bool {
+	return f.m.Has(loggerKey{})
+}
+
 // Info logs from context at the debug level.
 func (f Fields) Info(ctx context.Context, args ...interface{}) {
 	f.From(ctx).Info(args...)
