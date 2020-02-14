@@ -19,6 +19,7 @@ func BuildLoggerInjectorMiddleware(fieldsWithLogger log.Fields) grpc.UnaryServer
 }
 
 func InfoMiddleware(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (resp interface{}, err error) {
+	resp, err = handler(ctx, req)
 	log.Infof(ctx, "Info: %s", info.FullMethod)
-	return handler(ctx, req)
+	return
 }
